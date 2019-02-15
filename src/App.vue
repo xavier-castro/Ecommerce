@@ -1,16 +1,19 @@
 <template>
   <div id="app">
     <Header />
+    <Product />
     <router-view/>
   </div>
 </template>
 
 <script>
   import Header from './components/layout/Header.vue';
+  import Product from './components/Product.vue';
   export default {
     name: 'app',
     components: {
-      Header
+      Header,
+      Product
     }
   }
 </script>
@@ -23,6 +26,5 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
